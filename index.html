@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page - HTML, CSS, Javascript (GSAP)</title>
+  <!-- ==== STYLE.CSS ==== -->
+  <link rel="stylesheet" href="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="icon" href="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\logo.png">
+  <!-- REMIXICON CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ==== WRAPPER ==== -->
+  <div class="scroll">
+    <!-- ======use to add the scroll bar ======= --->
+    <section class="wrapper">
+      <!-- == creating wrapper=== --->
+      <div class="left_container">
+        <!--there are two containers in this design left container and right container===== --->
+        <nav>
+          <div class="logo_content">
+            <!-- === using my own logo at the top left corner of the page === ---->
+            <div class="margin-color">
+              <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\Awwsm.jpg" alt="logo" class="own_logo">
+            </div>
+          </div>
+          <ul class="nav_content">
+            <!-- creting several tabs for several types of peoples --->
+            <li><a class="nav_links active" href="javascript:void(0)"><strong>Men</strong></a></li>
+            <li><a class="nav_links" href="javascript:void(0)"><strong>Women</strong></a></li>
+            <li><a class="nav_links" href="javascript:void(0)"><strong>Kids</strong></a></li>
+            <li><a class="nav_links" href="javascript:void(0)"><strong>Customize</strong></a></li>
+          </ul>
+        </nav>
+        <br>
+        <main class="tools">
+          <div class="search">
+            <!--- creating the search bar to search our products --->
+            <input type="text" class="search_input" placeholder="Search Our Products....">
+            <button class="search_btn">
+              <!-- by creating the search button class we want to create the serch button and use css on it-->
+              <div class="slider">
+                <em class="ri-search-line"></em>
+              </div>
+            </button>
+          </div>
+          <div class="discount">
+            <!-- on the right side corresponding the right container we build the discount class-->
+            <span class="discount_percentage"><strong>20%</strong></span>
+            <div class="seprator"></div>
+            <!--to draw the horizontal line under the discount -->
+            <span class="save_up"><b>save up to</b></span>
+          </div>
+        </main>
+        <section>
+          <main class="brand_type">
+            <!-- to create the brand name-->
+            <div class="large_text">
+              <h1>
+                <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@600&family=Merriweather:wght@700&display=swap" rel="stylesheet"><strong>Brand New <br>Models</strong>
+              </h1>
+              <div class="seprator_1"></div>
+            </div>
+            <!--on the above tag creting the h1 heading with the string "Brand New Models"  --->
+            <div class="sliders">
+              <button class="slider_btn">
+                <strong class="ri-arrow-left-s-line"></strong> <!-- slider means the previous page and next page buttons that are used to make for the user's help-->
+
+              </button>
+              <button class="slider_btn">
+                <strong class="ri-arrow-right-s-line"></strong><!-- the first one is the button to go to the left side means previous page and the next button is for the right side means to next page-->
+              </button>
+            </div>
+          </main>
+        </section>
+        <br>
+        <section class="bottom_products_slider">
+          <ul class="bottom_products_card">
+            <li class="card_item">
+              <div class="item_content">
+                <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\earpod.jpg" alt=" apple earpod latest one" class="apple_item">
+              </div>
+              <div class="app_product">
+                <div class="transparent_bg">
+                  <div class="add_to_cart">
+                    <i class="ri-add-line"></i>
+                  </div>
+                </div>
+                <div class="desc">
+                  <span class="card_product_name">Apple Airpod 5.0</span>
+                  <span>2 colors</span>
+                  <span class="price"><i class="ri-money-rupee-circle-line"></i>₹ 23,000</span>
+                </div>
+              </div>
+            </li>
+            <li class="card_item">
+              <div class="item_content" style="background-color: #5584AC;">
+                <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\iphone Xs.jpg" alt="apple iphone.xs " class="apple_item">
+              </div>
+              <div class="app_product">
+                <div class="transparent_bg">
+                  <div class="add_to_cart" style="background-color: #5584AC;">
+                    <i class="ri-add-line"></i>
+                  </div>
+                </div>
+                <div class="desc">
+                  <span class="card_product_name">iphone xs</span>
+                  <span>3 colors</span>
+                  <span class="price"><i class="ri-money-rupee-circle-line"></i>₹ 63,000</span>
+                </div>
+              </div>
+            </li>
+            <li class="card_item">
+              <div class="item_content" style="background-color: #0a0a0a;">
+                <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\iphone 12 pro max.png" alt="iphone 12 max pro" class="apple_item">
+              </div>
+              <div class="app_product">
+                <div class="transparent_bg">
+                  <div class="add_to_cart" style="background-color: #0a0a0a;">
+                    <i class="ri-add-line"></i>
+                  </div>
+                </div>
+                <div class="desc">
+                  <span class="card_product_name">iphone 12 max pro</span>
+                  <span>3 colors</span>
+                  <span class="price"><i class="ri-money-rupee-circle-line"></i>₹ 120,000</span>
+                </div>
+              </div>
+            </li>
+            <li class="card_item">
+              <div class="item_content" style="background-color: #FFB562;">
+                <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\iphone 14 pro max.png" alt="iphone 14 max pro" class="apple_item">
+              </div>
+              <div class="app_product">
+                <div class="transparent_bg">
+                  <div class="add_to_cart" style="background-color: #FFB562;">
+                    <i class="ri-add-line"></i>
+                  </div>
+                </div>
+                <div class="desc">
+                  <span class="card_product_name">iphone 14 max pro</span>
+                  <span>3 colors</span>
+                  <span class="price"><i class="ri-money-rupee-circle-line"></i>₹ 84,900</span>
+                </div>
+              </div>
+            </li>
+            <li class="card_item">
+              <div class="item_content" style="background-color: #069A8E;">
+                <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\apple macbook.jpeg" alt="apple macbook latest" class="apple_item">
+              </div>
+              <div class="app_product">
+                <div class="transparent_bg">
+                  <div class="add_to_cart" style="background-color: #069A8E;">
+                    <i class="ri-add-line"></i>
+                  </div>
+                </div>
+                <div class="desc">
+                  <span class="card_product_name">Apple Macbook</span>
+                  <span>3 colors</span>
+                  <span class="price"><i class="ri-money-rupee-circle-line"></i> ₹ 227,900</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <main class="right_container">
+        <nav class="right_nav">
+          <div class="right_border"></div>
+          <ul class="right_nav_content">
+            <li class="r_nav_links">
+              model : A1938
+            </li>
+            <button class="cart_btn"><em class="ri-shopping-bag-fill"></em></button>
+          </ul>
+        </nav>
+        <section>
+          <div class="user_selected_product_content">
+            <img src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\airpod_final.jpg" alt="Apple airpod 2.0" class="user_selected_product_img">
+          </div>
+          <div class="size_product">
+            <main class="content">
+              <div class="specification">
+                <h3><u><strong>Specifications</strong></u></h3>
+              </div>
+              <div class="specification_details">
+                <ol class="bullet_colour">
+                  <li>Dual optical sensors</li>
+                  <li>Dual beam-forming microphones</li>
+                  <li>Motion-detecting accelerometer</li>
+                  <li>Speech-detecting accelerometer</li>
+                </ol>
+              </div>
+              <br><br>
+              <div class="text">
+                <h2 class="selected_product_text">Apple AirPods 2.0</h2>
+              </div>
+              <div class="reviews">
+                <span>Review 10k</span>
+                <ul class="stars_list">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                </ul>
+              </div>
+            </main>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- ==== MAIN JS ==== -->
+    <script src="C:\Users\Sayan\OneDrive\Desktop\Product_landing_page\index.js"></script>
+  </div>
+</body>
+
+</html>
