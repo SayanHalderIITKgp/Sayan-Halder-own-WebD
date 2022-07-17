@@ -1,0 +1,461 @@
+/*The entire code is done by Sayan Halder
+Third Year Undergraduate Student of IIT KHARAGPUR,INDIA
+During october-november of 2021
+This is a Product_landing _page */
+
+body{
+    background-color: #ff4e56;
+    transition: background-color 300ms;
+    margin: 0;
+    padding: 0;
+
+    /*box-sizing: border-box;*/
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    outline: focus;/*outline:none;*/
+    border: none;
+}
+
+/* ==== WRAPPER ==== */
+.scroll{
+  width: 100%;
+  height:100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.left_container{
+    width: 100%;
+    background-color: #ff4e56;
+    height: 100%;
+    z-index: 1;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+.logo_content{
+    width: 200px;
+    height: 70px;
+    background-color: #EDF3F8;
+}
+.margin-color{
+  padding-top: 8px;
+  background-color: #ff4e56;
+}
+.logo_content .own_logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav_content{
+    display: flex;
+}
+.nav_content .nav_links{
+    padding: 0 18px;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+}
+.nav_links:hover{
+    color: #270082;
+}
+.nav_links:active{
+    color: black;
+
+    font-weight: 600;
+}
+.tools{
+    margin-top: 1rem;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+}
+.search_input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: black;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: cursive;
+    margin-left: 2.3rem;
+    margin-right: -1.1rem;
+    outline: focus;/*outline: none;*/
+}
+.search_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 15px;
+    font-size: 18px;
+    background-color: white;
+}
+.slider{
+    margin-left: -0.6rem;
+    margin-top: .2rem;
+    text-align: center;
+    overflow: hidden;
+}
+.slider i{
+    color: white;
+    font-size: 20px;
+}
+.discount{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.discount_percentage{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #000B49;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 2px;
+    width: 100px;
+}
+.seprator{
+    width: 100%;
+    height: 2px;
+    background-color: #000B49;
+    position: relative;
+}
+.seprator::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    background-color: #000B49;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.save_up{
+    font-size: 15px;
+    color: #0C1E7F;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 7px;
+}
+.brand_type{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+}
+.sliders{
+    margin-top: 10rem;
+}
+
+.large_text{
+    font-size: 70px;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    font-weight: 900;
+    display: inline-block;
+    background: linear-gradient(to right,indigo,blue,green);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+.seprator_1{
+  width: 100%;
+  height: 2.5px;
+  padding-top: 5px;
+  background: linear-gradient(to right,indigo,blue,green);
+  -webkit-background-clip: linear;
+  color: transparent;
+  position: relative;
+}
+.seprator_1::after{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 260px;
+    background-color: darkolivegreen;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+h1{
+  font-size<div class="seprator"></div>: 56px;
+  font-weight: 700;
+}
+.slider_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    outline: inherit; /*outline: none;*/
+    border: 1px solid #383838;
+    background-color: transparent;
+    cursor: pointer;
+}
+.slider_btn i {
+    font-size: 28px;
+    font-weight: 200;
+    color: #066163;
+}
+.bottom_products_slider{
+    width: 950px;
+    height: 240px;
+    position: inherit;
+    right: 30%;
+    z-index: -1;
+    margin-top: 0.6rem;
+}
+.bottom_products_card{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.card_item{
+    width: 150px;
+    height: 210px;
+    max-height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 22px 20px 2px rgba(202, 202, 202, 1);
+}
+.item_content{/*to give the background on the box containing the airpod*/
+    width: 150px;
+    height: 100px;
+    position: relative;
+    background-color: #ADCF9F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.item_content .apple_item{/*the box contining the airpod logo*/
+    width: 90%;
+    height: 110px;
+    object-fit: contain;
+    transform: perspective();
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 0.10rem rgb(82,82,82));
+}
+.app_product{/*to make the lower half containing product description*/
+    width: 98.5%;
+    min-height: 62%;
+    background-color: #F6E3C5;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.transparent_bg{/* this is used to make the layer of (+), the pink coloured circle outside (+)*/
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #FBC5C5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -13.6px;
+}
+.add_to_cart{/*the round outside the '+' is designed by this code*/
+    width: 16.5px;
+    height: 16.5px;
+    background-color: #ADCF9F;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_to_cart i {/*to do the '+' inside the round only + sign colours by this code*/
+    color: white;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.desc{
+    margin-top: 0.40rem;
+    z-index: 100;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+.card_product_name
+{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    display: block;
+    font-weight: 700;
+}
+.desc > span:nth-child(2){
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    color: #73777B;
+}
+.price{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5px;
+}
+.price i{
+    margin-right: 3px;
+    color: #06113C;
+}
+.right_container{
+    width: 100%;
+    height: 100%;
+    background-color: #53BF9D;
+    z-index: 1;
+}
+.right_border{
+    padding-top: 5px;
+    padding-right: 5px;
+    background-color: #53BF9D;
+}
+.right_nav_content{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+.r_nav_links{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.cart_btn{
+    width: 50px;
+    height: 50px;
+    background-color: #A0D995;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: alias;
+}
+.cart_btn i {
+    color: #22577E;
+    font-size: 25px;
+}
+.user_selected_product_content{
+    width: 100%;
+    height: 350px;
+    padding: 1rem;
+    position: relative;
+}
+.user_selected_product_img{
+    width: 100%;
+    height: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: none;
+    position: relative;
+    top: auto;
+    right: 2rem;
+}
+.size_product{
+    width: 100%;
+    height:30rem;
+    background-color: black;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.specification{
+  width:100%;
+  letter-spacing: 0.1rem;
+  text-decoration: inherit;
+  font-family: 'Kanit', sans-serif;
+  size:20px;
+  color:#FF5F00;
+}
+.specification_details{
+  font-size: 22px;
+  color:#1363DF;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.text{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px;
+}
+.selected_product_text{
+    color: #FAF5E4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+.reviews{
+    margin-top: 0;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.reviews span{
+  padding-bottom: 15px;
+    text-transform: none;
+    color: #FDF6EC;
+    letter-spacing: 1px;
+}
+.stars_list{
+    display: flex;
+
+}
+.stars_list li i{
+    color: #FFF323;
+    font-size: 15px;
+    padding: 0 6px;
+}
