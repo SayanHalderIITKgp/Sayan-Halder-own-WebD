@@ -10,3 +10,6 @@ Build up the skeleton of this webpage using HTML , firstly divide the page into 
 Using CSS I have implemented all the styles inside the webpage and in some cases BOOTSTRAP is also used. The icon is created using favicon.
 
 Also GSAP is used here to create a fancy animation throughout the webpage , GSAP is a powerful library of JAVASCRIPT mainly to use several animation in the webpages.
+
+The Website is live at:
+https://sayanhalderiitkgp.github.io/Sayan-Halder-own-WebD/
